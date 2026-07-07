@@ -14,8 +14,11 @@
 <body>
     <h2>Jekyll Posts</h2>
 
-    {{site.posts}}
-    
+    {% for item in site.posts %}
+        <h3>{{item.title}}</h3>
+        <p>{{item.content}}</p>
+    {% endfor %}
+
 </body>
 </html>
 
